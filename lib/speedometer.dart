@@ -47,6 +47,7 @@ class _SpeedometerState extends State<Speedometer> {
     double startAngle = 3.0;
     double endAngle = 21.0;
 
+    //setting pointer(speedometer) value
     double _pointerAngle = 0;
     if (_minValue <= _currentValue && _currentValue <= _maxValue) {
       _pointerAngle = (((_currentValue - _minValue) * (endAngle - startAngle)) /
@@ -58,6 +59,7 @@ class _SpeedometerState extends State<Speedometer> {
       _pointerAngle = endAngle;
     }
 
+    // call listener.onComplete in case pointer achieved the end.
     if (_currentValue >= _maxValue){
        if (widget.onComplete != null){
          widget.onComplete!();
@@ -78,7 +80,7 @@ class _SpeedometerState extends State<Speedometer> {
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(_size * 0.075),
                   child: CustomPaint(
-                    /* bar drawing */
+                    /* speedometer circle drawing */
                     size: Size(_size, _size),
                     painter: ViewPainter(
                         startAngle: 9, sweepAngle: 18, color: widget.barColor),

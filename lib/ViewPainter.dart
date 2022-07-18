@@ -27,6 +27,7 @@ class ViewPainter extends CustomPainter {
   }
 }
 
+//arrow of pointer
 class TriangleClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
@@ -42,6 +43,7 @@ class TriangleClipper extends CustomClipper<Path> {
   bool shouldReclip(TriangleClipper oldClipper) => false;
 }
 
+//center of pointer
 class PointerClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
