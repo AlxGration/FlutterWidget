@@ -9,13 +9,13 @@ Customizable speedometer widget for Flutter (Android, iOS) with onComplete obser
 In order to use this package, add the following dependency in your Flutter project.
 ```yaml
 dependencies:
- speedometer: ^0.0.1
+  alxgration_speedometer: ^0.0.1
 ```
 and then press "Pub get" if you are using AndroidStudio or run `flutter packages upgrade` otherwise.
 
 In your Dart code, add import:
 ```dart
-import 'package:speedometer/speedometer.dart';
+import 'package:alxgration_speedometer/speedometer.dart';
 ```
 
 ## Usage

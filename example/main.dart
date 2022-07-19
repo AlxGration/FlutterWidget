@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:speedometer/speedometer.dart';
+import 'package:alxgration_speedometer/speedometer.dart';
 
 void main() => runApp(MyApp());
 

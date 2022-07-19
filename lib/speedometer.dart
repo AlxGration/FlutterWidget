@@ -1,4 +1,4 @@
-library speedometer;
+library alxgration_speedometer;
 
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
