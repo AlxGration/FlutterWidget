@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 class ViewPainter extends CustomPainter {
   ViewPainter(
       {this.startAngle = 0, this.sweepAngle = 0, this.color = Colors.white});
+
   final double startAngle;
   final double sweepAngle;
   final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
     final rect = Rect.fromLTRB(size.width * 0.05, size.width * 0.05,

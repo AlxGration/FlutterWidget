@@ -38,3 +38,5 @@ Speedometer(
     },
 );
 ```
+## Package
+You can find the package [here](https://pub.dev/packages/alxgration_speedometer)

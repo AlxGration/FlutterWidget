@@ -20,7 +20,7 @@ class Speedometer extends StatefulWidget {
       this.displayNumericStyle = defaultNumericStyle,
       this.displayText = "",
       this.displayTextStyle = defaultTextStyle,
-      this.onComplete = null});
+      this.onComplete});
 
   final double size;
   final int minValue;
@@ -60,10 +60,10 @@ class _SpeedometerState extends State<Speedometer> {
     }
 
     // call listener.onComplete in case pointer achieved the end.
-    if (_currentValue >= _maxValue){
-       if (widget.onComplete != null){
-         widget.onComplete!();
-       }
+    if (_currentValue >= _maxValue) {
+      if (widget.onComplete != null) {
+        widget.onComplete!();
+      }
     }
 
     return Container(
