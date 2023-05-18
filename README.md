@@ -38,5 +38,22 @@ Speedometer(
     },
 );
 ```
+## Data Types
+
+The project's parameters have the following data types:
+
+```dart
+  final double size;
+  final int minValue;
+  final int maxValue;
+  final int currentValue;
+  final Color barColor;
+  final Color pointerColor;
+  final TextStyle displayNumericStyle;
+  final String displayText;
+  final TextStyle displayTextStyle;
+  final VoidCallback? onComplete;
+```
+
 ## Package
 You can find the package [here](https://pub.dev/packages/alxgration_speedometer)
